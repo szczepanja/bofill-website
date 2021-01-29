@@ -229,9 +229,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 12px;
+  font-weight: 600;
   pointer-events: none;
   z-index: 4;
   transition: 0.3s ease-in-out;
@@ -239,7 +239,6 @@ body {
 .gallery-item:hover .text {
   opacity: 1;
   animation: move-down 0.3s linear;
-  padding: 16px;
   width: 100%;
 }
 @keyframes move-down {
@@ -308,5 +307,29 @@ body {
   .w-5,
   .w-6 {
     grid-column: span 1;
+  }
+}
+
+/* media queries */
+
+@media screen and (max-width: 500px) {
+  .sections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .w-1 .w-2 .w-3 .w-4 .w-5 .w-6 .w-7 .w-8 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@keyframes move-down {
+  5% {
+    top: 5%;
+  }
+  50% {
+    top: 35%;
+  }
+  100% {
+    top: 50%;
   }
 }
