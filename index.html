@@ -28,18 +28,18 @@
 
   <section class="menu-section">
     <div class="navbar">
-      <a href="#home">HOME</a>
+      <a href="#home" class="home">HOME</a>
       <div class="subnav">
-        <button class="subnavbtn">
+        <button class="subnavbtn projects" >
           PROJECTS
         </button>
         <div class="subnav-content">
-          <a href="#urban">URBAN DESIGN</a>
-          <a href="#garden">PARKS AND GARDENS</a>
-          <a href="#urban">PRIVATE HOUSING</a>
-          <a href="#offices">OFFICES</a>
-          <a href="#industrial">INDUSTRIAL DESIGN</a>
-          <a href="#fabrica">LA FABRICA</a>
+          <a href="#urban" class="ud">URBAN DESIGN</a>
+          <a href="#garden" class="pag">PARKS AND GARDENS</a>
+          <a href="#urban" class="ph">PRIVATE HOUSING</a>
+          <a href="#offices" class="off">OFFICES</a>
+          <a href="#industrial" class="ind">INDUSTRIAL DESIGN</a>
+          <a href="#fabrica" class="laf">LA FABRICA</a>
         </div>
       </div>
       <a href="#news">NEWS</a>
@@ -51,8 +51,6 @@
         <div class="subnav-content">
           <ul>
             <a href="#english">ENGLISH</a>
-            <a href="#french">FRENCH</a>
-            <a href="#german">GERMAN</a>
             <a href="#polish">POLISH</a>
           </ul>
 
@@ -63,9 +61,9 @@
           CONTACT
         </button>
         <div class="subnav-content">
-          <a href="#insta">INSTAGRAM</a>
-          <a href="#fb">FACEBOOK</a>
-          <a href="#twitter">TWITTER</a>
+          <a target="_blank" href="https://www.instagram.com/bofillarquitectura/">INSTAGRAM</a>
+          <a target="_blank" href="https://www.facebook.com/RicardoBofillLevi/">FACEBOOK</a>
+          <a target="_blank" href="https://twitter.com/ricardobofill">TWITTER</a>
         </div>
       </div>
       <div class="search-container">
@@ -127,7 +125,12 @@
       </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="jquery.js"></script>
+  <script src="jquery.localize.js"></script>
+
+  <script>
+    $('[data-localize]').localize("myLanguage", {language: "pl"})
+  </script>
 </body>
 
 </html>
