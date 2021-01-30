@@ -1,0 +1,72 @@
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.gallery-container {
+  width: 100%;
+  height: 730px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 300px 350px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-item:hover .image img {
+  transform: scale(1.5);
+}
+
+.w1-1 {
+  grid-column: span 1;
+}
+.h1-1 {
+  grid-row: span 2;
+}
+.w2-2 {
+  grid-column: span 3;
+}
+.h2-2 {
+  grid-row: span 1;
+}
+.w3-3 {
+  grid-column: span 1;
+}
+.h3-3 {
+  grid-row: span 2;
+}
+.w4-4 {
+  grid-column: span 3;
+}
+.h4-4 {
+  grid-row: span 1;
+}
+
+.la-fabrica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 60px; */
+}
+
+h1 {
+  font-size: 150px;
+}
