@@ -1,3 +1,3 @@
-document.querySelector("#projects").scrollIntoView({
-  behavior: "smooth",
-});
+function goBack() {
+  window.history.back();
+}

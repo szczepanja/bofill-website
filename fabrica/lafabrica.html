@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap"
       rel="stylesheet"
     />
 
@@ -40,24 +40,65 @@
 
         <div class="gallery-item w4-4 h4-4">
           <div class="image">
-            <img src="b5.jpg" alt="photo-gallery" />
+            <img src="b3.jpg" alt="photo-gallery" />
           </div>
         </div>
       </div>
+
+      <div class="mouse-container">
+        <div class="mouse-scroll"></div>
+      </div>
     </section>
 
-    <section class="sections la-fabrica" id="fabrica">
-      <h1 class="title-fabica">LA FABRICA</h1>
-      <h3 class="subtitle-fabrica"></h3>
+    <section class="la-fabrica" id="fabrica">
+      <h1 class="title-fabrica">LA FABRICA</h1>
       <p class="p-fabrica">
-        Located in the outskirts of Barcelona, the repurposed cement factory La
-        Fábrica is home to the Taller de Arquitectura (RBTA) and the Bofill
-        family. Here we develop our distinct vocabulary to interpret a changing
-        world, nurturing the competence and cultural sensitivity of our
-        multitalented team. From polluting industrial settlement to unmatched
-        laboratory of ideas, La Fábrica represents the built manifesto of RBTA,
-        its legacy and headquarters.
+        La fabrica is a 3,100 m2 cement factory located near barcelona, spain,
+        which serves as the unique backdrop to local architect ricardo bofill‘s
+        studio and home. The factory, which was first built in the post world
+        war I era, is an architectural timeline of transformative vernacular
+        having expanded through various styles as new functions called for an
+        expanded program. The complex, providing a beautiful and varied series
+        of spaces spanning from brutalist to surrealist with an industrial
+        flavor, underwent a series of processes that converted the existing
+        structure into a studio, gallery, garden, and home- a re-purposed city
+        within an abandoned factory slowly engulfed by vegetation.
       </p>
+      <div class="button-section">
+        <button onclick="goBack()" class="prev-pg">PREVIOUS PAGE</button>
+      </div>
     </section>
+
+    <section class="second-gallery-section">
+      <div class="gallery-container">
+        <div class="gallery-item w1-1 h1-1">
+          <div class="image">
+            <img src="1.jpg" alt="photo-gallery" />
+          </div>
+        </div>
+
+        <div class="gallery-item w2-2 h2-2">
+          <div class="image">
+            <img src="2.jpg" alt="photo-gallery" />
+          </div>
+        </div>
+
+      <div class="gallery-item w3-3 h3-3">
+        <div class="image">
+          <img src="4.jpg" alt="photo-gallery" />
+        </div>
+      </div>
+
+      <div class="gallery-item w4-4 h4-4">
+        <div class="image">
+          <img src="3.jpg" alt="photo-gallery" />
+        </div>
+      </div>
+    </section>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </body>
 </html>
