@@ -195,11 +195,11 @@ body {
   object-fit: cover;
   object-position: 50% 50%;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .gallery-item:hover .image img {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .gallery-item .text {
