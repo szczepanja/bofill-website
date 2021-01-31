@@ -9,7 +9,9 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-  grid-gap: 15px;
+  grid-gap: 10px;
+  text-align: center;
+  position: relative;
 }
 
 .gallery-item {
@@ -49,4 +51,43 @@
 }
 .h2 {
   grid-row: span 1;
+}
+.text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* PREVIOUS PAGE BUTTON */
+
+.button-section {
+  height: 60px;
+  width: 150px;
+}
+button {
+  margin: 5px;
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+.prev-pg {
+  height: 50px;
+  padding: 14px 16px;
+}
+.prev-pg:hover {
+  background-color: #000;
+  color: #fff;
+  padding: 14px 16px;
 }
