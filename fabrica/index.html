@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <!-- <link rel="stylesheet" href="/style.css" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <title>LA FABRICA</title>
+</head>
+
+<body>
+  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+  <div class="button-section">
+    <button onclick="goBack()" class="prev-page-btn">MAIN PAGE</button>
+  </div>
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <ul class="gallery-item w1-1 h1-1">
+        <li class="image">
+          <img src="b1.jpg" alt="old photo of fabrica" />
+        </li>
+      </ul>
+
+      <ul class="gallery-item w2-2 h2-2">
+        <li class="image">
+          <img src="b2.jpg" alt="ricardo bofil" />
+        </li>
+      </ul>
+
+      <ul class="gallery-item w3-3 h3-3">
+        <li class="image">
+          <img src="b4.jpg" alt="model of fabrica" />
+        </li>
+      </ul>
+
+      <ul class="gallery-item w4-4 h4-4">
+        <li class="image">
+          <img src="b3.jpg" alt="aerial photo of fabrica" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="mouse-container">
+      <div class="mouse-scroll"></div>
+    </div>
+  </section>
+
+  <section class="text-section" id="fabrica">
+    <h1 class="title">LA FABRICA</h1>
+    <div class="paragraph-section">
+      <p class="paragraph">
+        La fabrica is a 3,100 m2 cement factory located near barcelona, spain,
+        which serves as the unique backdrop to local architect ricardo bofill‘s
+        studio and home. The factory, which was first built in the post world
+        war I era, is an architectural timeline of transformative vernacular
+        having expanded through various styles as new functions called for an
+        expanded program. The complex, providing a beautiful and varied series
+        of spaces spanning from brutalist to surrealist with an industrial
+        flavor, underwent a series of processes that converted the existing
+        structure into a studio, gallery, garden, and home- a re-purposed city
+        within an abandoned factory slowly engulfed by vegetation.
+      </p>
+    </div>
+  </section>
+
+  <section class="second-gallery-section">
+    <div class="gallery-container">
+      <!-- grid-column-2 grid-row-1 -->
+      <ul class="gallery-item w1-1 h1-1">
+        <li class="image">
+          <img src="1.jpg" alt="photo-gallery" />
+        </li>
+      </ul>
+
+      <ul class="gallery-item w2-2 h2-2">
+        <li class="image">
+          <img src="2.jpg" alt="photo-gallery" />
+        </li>
+      </ul>
+
+      <ul class="gallery-item w3-3 h3-3">
+        <li class="image">
+          <img src="4.jpg" alt="photo-gallery" />
+        </li>
+      </ul>
+
+      <ul class="gallery-item w4-4 h4-4">
+        <li class="image">
+          <img src="3.jpg" alt="photo-gallery" />
+        </li>
+      </ul>
+  </section>
+  <script>
+    // zmienić na taką samą nawigację
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+
+</html>

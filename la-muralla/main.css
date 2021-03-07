@@ -3,6 +3,25 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.gotopbtn {
+  position: fixed;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  bottom: 40px;
+  right: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  border-radius: 60px;
+}
 
 .button-section {
   height: 60px;
@@ -10,7 +29,7 @@
 }
 button {
   margin: 5px;
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   cursor: pointer;
   text-decoration: none;
@@ -18,11 +37,11 @@ button {
   border: none;
   background-color: #fff;
 }
-.prev-pg {
+.prev-page-btn {
   height: 50px;
   padding: 14px 16px;
 }
-.prev-pg:hover {
+.prev-page-btn:hover {
   background-color: #000;
   color: #fff;
   padding: 14px 16px;
@@ -57,13 +76,13 @@ button {
   object-position: 50% 50%;
   cursor: pointer;
   z-index: 4;
-  transition: 0.8s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .gallery-item:hover .image img {
   transform: scale(1.3);
 }
 
-.walden7 {
+.section-header {
   width: 100%;
   height: 350px;
   margin-bottom: 40px;
@@ -72,13 +91,15 @@ button {
   justify-content: center;
   align-items: center;
 }
-.title-walden {
+.title {
   font-size: 80px;
   margin: 20px;
 }
-.p-walden {
-  font-weight: 300;
+.paragraph-section {
   width: 35%;
   text-align: justify;
   text-justify: inter-word;
+}
+.paragraph {
+  font-weight: 300;
 }

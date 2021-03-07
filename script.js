@@ -1,10 +1,13 @@
-const data = {
-  english: {
-    title: "BOFILL'S ARCHITECTURE",
-    projects: "PROJECTS",
-  },
-  polish: {
-    title: "ARCHITEKTURA BOFILL'A",
-    sunbavbtn projects: "PROJEKTY",
-  },
-};
+const f = document.getElementById("form");
+const q = document.getElementById("query");
+const google = "https://www.google.com";
+const site = "pagedart.com";
+
+function submitted(event) {
+  event.preventDefault();
+  const url = google + site + "+" + q.value;
+  const win = window.open(url, "_blank");
+  win.focus();
+}
+
+f.addEventListener("submit", submitted);

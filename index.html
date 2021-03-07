@@ -5,122 +5,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
-  <title>BOFILL'S ARCHITECTURE</title>
-</head>
-
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&display=swap&family=Raleway:wght@100;200&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>BOFILL'S ARCHITECTURE</title>
+  </head>
+  
 <body>
-  <section class="sections img">
-    <div class="banner">
-      <video autoplay muted loop>
-        <source src="/main-img/bofill-video.mp4" type="video/mp4" />
-      </video>
+  <section class="img-section">
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+    <div class="banner" id="insert-video">
+      <!-- jak schowasz video w css to i tak sie sciagnie -->
+      <!-- jak strona sie załaduje i ekran bedzie szerszy niz 800px to wstrzyknij filmik -->
+      
+      <video autoplay muted loop src="/main-img/bofill-video.mp4" type="video/mp4" id="video"></video>
       <h2>RICARDO BOFILL</h2>
     </div>
     <div class="mouse-container">
       <div class="mouse-scroll"></div>
     </div>
   </section>
-
+  
   <section class="menu-section">
-    <div class="navbar" id="my-top-nav">
-      <a href="#home" class="active">HOME</a>
+    <div class="navbar">
+      <a href="#home"">HOME</a>
+
       <div class="subnav">
         <button class="subnavbtn projects">
           PROJECTS
         </button>
-        <div class="subnav-content">
-          <a href="fabrica/lafabrica.html">LA FABRICA</a>
-          <a href="walden7/walden7.html">WALDEN-7</a>
-          <a href="exterior/exterior.html">EXTERIOR DESIGN</a>
-          <a href="la-muralla/lamuralla.html">LA MURALLA ROJA</a>
-        </div>
+        <nav class="subnav-content">
+          <a href="/fabrica/index.html">FABRICA</a>
+          <a href="/walden7/index.html">WALDEN-7</a>
+          <a href="/exterior/index.html">EXTERIOR</a>
+          <a href="/la-muralla/index.html">MURALLA</a>
+        </nav>
       </div>
-
+      
       <div class="subnav">
         <button class="subnavbtn">
           LANGUAGE
         </button>
-        <div class="subnav-content lang">
-          <ul>
-            <a href="#" language='english'>ENGLISH</a>
-            <a href="#" language='polish'>POLISH</a>
-          </ul>
+        <nav class="subnav-content">
+          <a href="#" language='english'>ENGLISH</a>
+          <a href="#" language='polish'>POLISH</a>
+          <a href="#" language='jedish'>JEDISH</a>
 
-        </div>
+        </nav>
       </div>
+      
       <div class="subnav">
         <button class="subnavbtn">
           CONTACT
         </button>
-        <div class="subnav-content">
-          <a target="_blank" href="https://www.instagram.com/bofillarquitectura/">INSTAGRAM</a>
-          <a target="_blank" href="https://www.facebook.com/RicardoBofillLevi/">FACEBOOK</a>
-          <a target="_blank" href="https://twitter.com/ricardobofill">TWITTER</a>
+        <nav class="subnav-content">
+          <a target="_blank" rel="noopener noreferrer"
+            href="https://www.instagram.com/bofillarquitectura/">INSTAGRAM</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/RicardoBofillLevi/">FACEBOOK</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ricardobofill">TWITTER</a>
+        </nav>
+      </div>
+
+      <div class="subnav">
+        <div class="search-box">
+          <input class="search-txt" type="text" name="" placeholder="SEARCH">
+          <a class="search-btn" href="#"></a>
+          <i class="fas fa-search"></i>
         </div>
       </div>
-      <div class="search-container">
-        <input type="text" placeholder="SEARCH">
-        <div class="search-bar"></div>
-      </div>
-  </section>
-
+    </section>
+    
   <div class="project-section">
     <div class="gallery-container">
       <div class="gallery-item w-1 h-1">
-        <div class="image grey">
-          <img src="/main-img/1.jpg" alt="photo-gallery">
-        </div>
-        <div class="text">la fábrica</div>
+        <ul class="gallery-image grey">
+          <li class="gallery-item">
+            <img src="/main-img/1.jpg" alt="interior design in fabrica">
+          </li>
+        </ul>
+        <p class="text">la fábrica</p>
       </div>
-
+      
       <div class="gallery-item w-2 h-2">
-        <div class="image grey">
-          <img src="/main-img/2.jpg" alt="photo-gallery">
-        </div>
-        <div class="text">la fábrica</div>
+        <ul class="gallery-image grey">
+          <li class="gallery-item">
+            <img src="/main-img/2.jpg" alt="interior design in fabrica">
+          </li>
+        </ul>
+        <p class="text">la fábrica</p>
       </div>
 
       <div class="gallery-item w-3 h-3">
-        <div class="image grey">
-          <img src="/main-img/3.jpg" alt="photo-gallery">
-        </div>
-        <div class="text">exterior design</div>
+        <ul class="gallery-image grey">
+          <li class="gallery-item">
+            <img src="/main-img/3.jpg" alt="exterior design in fabrica">
+          </li>
+        </ul>
+        <p class="text">exterior design</p>
       </div>
-
+      
       <div class="gallery-item w-4 h-4">
-        <div class="image grey">
-          <img src="/main-img/4.jpg" alt="photo-gallery">
-        </div>
-        <div class="text">interior design</div>
+        <ul class="gallery-image grey">
+          <li class="gallery-item">
+            <img src="/main-img/4.jpg" alt="interior design in fabrica">
+          </li>
+        </ul>
+        <p class="text">interior design</p>
       </div>
-
+      
       <div class="gallery-item w-5 h-5">
-        <div class="image grey">
-          <img src="/main-img/5.jpg" alt="photo-gallery">
-        </div>
-        <div class="text">la muralla roja</div>
+        <ul class="gallery-image grey">
+          <li class="gallery-item">
+            <img src="/main-img/5.jpg" alt="view on the roof in roja">
+          </li>
+        </ul>
+        <p class="text">la muralla roja</p>
       </div>
-
+      
 
       <div class="gallery-item w-6 h-6">
-        <div class="image grey">
-          <img src="/main-img/6.jpg" alt="photo-gallery">
-        </div>
-        <div class="text">walden 7</div>
+        <ul class="gallery-image grey">
+          <li class="gallery-item">
+            <img src="/main-img/6.jpg" alt="view on the roof in walden 7">
+          </li>
+        </ul>
+        <p class="text">walden 7</p>
       </div>
-
+      
       <div class="gallery-item w-7 h-7">
-        <div class="image grey">
-          <img src="/main-img/7.jpg" alt="photo-gallery">
-        </div>
-        <div class="text">la muralla roja</div>
+        <ul class="gallery-image grey">
+          <li class="gallery-item">
+            <img src="/main-img/7.jpg" alt="exterior design in roja">
+          </li>
+        </ul>
+        <p class="text">la muralla roja</p>
       </div>
     </div>
-</body>
-
-</html>
+    <!-- chowające się menu - jedziesz w dół chowa sie, jedziesz do góry pokazuje sie. Miej na uwadze żę na iphonie ekran podjedzie do góry poza zakres strony i wróci na dół.  -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </body>
+  
+  </html>
+  
+  <!-- przećwiczyć javascript w kata -->
+  <!-- 2-3 projekty w react - jeden bez api a potem z api -->
+  <!-- galeria zwierząt, filtrowanie koty/psy, po imieniu i po wieku -->
+  <!-- galeria piw ściągana z api, filtrowanie koty/psy, po imieniu i po wieku -->
+  
+  
+  <!-- workflow - bierzesz taska, robisz brancha pod tego taska (NAV-1680-add-smooth-scrolling), robisz robisz, merge do mastera i done -->
+  <!-- workflow - bierzesz taska, robisz commita z nazwa tego taska -->
