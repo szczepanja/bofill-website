@@ -124,6 +124,7 @@ body {
   align-items: center;
   text-align: center;
   font-family: "Kanit", sans-serif;
+  font-weight: 600;
   padding: 14px 40px;
 }
 
@@ -136,6 +137,7 @@ body {
 .navbar a {
   /* float: left; */
   font-size: 13px;
+  font-weight: 600;
   color: #000;
   text-align: center;
   padding: 16px;
@@ -211,7 +213,8 @@ body {
 /* 4 gallery section */
 
 .gallery-container {
-  font-family: "Shrikhand", cursive;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -224,6 +227,7 @@ body {
 @media (max-width: 800px) {
   .gallery-container {
     display: block;
+    font-family: "Shrikhand", cursive;
   }
 }
 
@@ -274,7 +278,7 @@ body {
   .gallery-item .text {
     opacity: 1;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 40%;
     z-index: 4;
   }
