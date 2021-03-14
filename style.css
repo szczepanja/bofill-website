@@ -67,6 +67,17 @@ body {
   mix-blend-mode: screen;
 }
 
+@media (max-width: 800px) {
+  .banner h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 33%;
+    font-size: 20vw;
+    line-height: 20vh;
+  }
+}
+
 .mouse-container {
   position: absolute;
   bottom: 5%;
@@ -200,24 +211,18 @@ body {
 /* 4 gallery section */
 
 .gallery-container {
-  font-family: "Raleway", sans-serif;
+  font-family: "Shrikhand", cursive;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 200px 250px;
-  /* grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 2fr 1fr 2fr; */
-
   grid-template-rows: 200px 250px;
   grid-gap: 10px;
   grid-auto-flow: dense;
-  /* chce mieć 3 kolumny - 1 kolumna ma zajmować ćwierć, druga ma zajmować pół, trzecia ma zajmować ćwierć*/
 }
 
 @media (max-width: 800px) {
   .gallery-container {
-    /* grid-template-columns: 1fr 2fr;
-grid-template-rows: 2fr 1fr; */
     display: block;
   }
 }
@@ -265,6 +270,16 @@ grid-template-rows: 2fr 1fr; */
   animation: move-down 0.3s linear;
 }
 
+@media (max-width: 800px) {
+  .gallery-item .text {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    z-index: 4;
+  }
+}
+
 @keyframes move-down {
   0% {
     top: 10%;
@@ -279,11 +294,6 @@ grid-template-rows: 2fr 1fr; */
   }
 }
 
-/* utility class */
-/* grid-width-1 { grid-column: span 1;} */
-/* grid-width-2 { grid-column: span 2;} */
-/* grid-height-1 {grid-row: span 1;} */
-/* grid-height-2 {grid-row: span 2;} */
 .w-1 {
   grid-column: span 1;
 }
@@ -348,10 +358,8 @@ grid-template-rows: 2fr 1fr; */
   filter: grayscale(0%);
 }
 
-@media (max-width: 500px) {
-  .gallery-container {
-    /* display:none; */
-    /* grid-template-columns: 1fr 2fr;
-grid-template-rows: 2fr 1fr; */
+@media (max-width: 800px) {
+  .grey {
+    filter: grayscale(0%);
   }
 }
