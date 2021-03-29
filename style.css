@@ -125,7 +125,7 @@ body {
   text-align: center;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-  padding: 14px 40px;
+  padding: 14px 30px;
 }
 
 .navbar {
@@ -159,8 +159,11 @@ body {
   color: #000;
   background-color: inherit;
   padding: 16px;
+  padding-left: 30px;
   font-family: inherit;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 .subnav-content {
@@ -170,7 +173,6 @@ body {
   margin: 0;
   z-index: 1;
   background: #fff;
-
   left: 50%;
   transform: translateX(-50%);
 }
@@ -191,25 +193,6 @@ body {
   padding: 0;
 }
 
-/* #3search button */
-.search-box {
-  padding: 10px;
-  color: #b65d63;
-}
-
-.search-txt {
-  width: 70px;
-  border: none;
-  outline: none;
-  justify-content: left;
-  text-align: left;
-  font-family: "Kanit", sans-serif;
-  color: #b65d63;
-}
-.search-txt::placeholder {
-  color: #b65d63;
-}
-
 /* 4 gallery section */
 
 .gallery-container {
@@ -227,7 +210,6 @@ body {
 @media (max-width: 800px) {
   .gallery-container {
     display: block;
-    font-family: "Shrikhand", cursive;
   }
 }
 
@@ -262,8 +244,8 @@ body {
   top: 50%;
   left: 45%;
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
   pointer-events: none;
   z-index: 4;
   transition: 0.5s ease-in-out;
@@ -278,8 +260,12 @@ body {
   .gallery-item .text {
     opacity: 1;
     position: absolute;
-    top: 45%;
-    left: 40%;
+    top: 42%;
+    left: 42%;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    pointer-events: none;
     z-index: 4;
   }
 }

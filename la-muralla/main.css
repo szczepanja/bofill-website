@@ -24,8 +24,8 @@ html {
 }
 
 .button-section {
-  height: 60px;
-  width: 150px;
+  min-height: 60px;
+  min-width: 150px;
 }
 button {
   margin: 5px;
@@ -38,7 +38,7 @@ button {
   background-color: #fff;
 }
 .prev-page-btn {
-  height: 50px;
+  min-height: 50px;
   padding: 14px 16px;
 }
 .prev-page-btn:hover {
@@ -48,7 +48,7 @@ button {
 }
 
 .gallery-section {
-  height: 350px;
+  min-height: 350px;
   width: 100%;
 }
 .gallery-container {
@@ -102,4 +102,32 @@ button {
 }
 .paragraph {
   font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery-container {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 50px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .paragraph {
+    font-weight: 300;
+    width: 70%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
 }
