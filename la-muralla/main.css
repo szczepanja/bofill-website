@@ -95,39 +95,36 @@ button {
   font-size: 80px;
   margin: 20px;
 }
-.paragraph-section {
+.paragraph {
+  font-weight: 300;
   width: 35%;
   text-align: justify;
   text-justify: inter-word;
-}
-.paragraph {
-  font-weight: 300;
 }
 
 @media (max-width: 800px) {
   body {
     display: block;
   }
-}
-
-@media (max-width: 800px) {
   .gallery-container {
     display: block;
   }
-}
-
-@media (max-width: 800px) {
   .title {
-    font-size: 50px;
+    font-size: 45px;
     margin: 20px;
   }
-}
-
-@media (max-width: 800px) {
   .paragraph {
+    margin: 10px;
     font-weight: 300;
     width: 70%;
     text-align: justify;
     text-justify: inter-word;
+  }
+  .gallery-item .text {
+    opacity: 1;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    z-index: 4;
   }
 }

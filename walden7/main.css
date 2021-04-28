@@ -106,30 +106,20 @@ button {
   body {
     display: block;
   }
-}
-
-@media (max-width: 800px) {
   .gallery-container {
     display: block;
   }
-}
-
-@media (max-width: 800px) {
   .title {
-    font-size: 50px;
+    font-size: 45px;
     margin: 20px;
   }
-}
-
-@media (max-width: 800px) {
   .paragraph {
+    margin: 10px;
     font-weight: 300;
     width: 70%;
     text-align: justify;
     text-justify: inter-word;
   }
-}
-@media (max-width: 800px) {
   .gallery-item .text {
     opacity: 1;
     position: absolute;
